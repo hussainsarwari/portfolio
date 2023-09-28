@@ -169,22 +169,38 @@ input[type="submit"]:hover {
   left: 3rem;
   border-bottom: 1px solid;
 }
+.proj{
+  text-align: center;
+  display: grid;
+  grid-template-columns: 30em 30em;
+  z-index: 111;
+  opacity: 0;
+  bottom: 35em;
+  position: relative;
+  height: 35em;
+  padding: 2em;
+  width: 90%;
+  background: #00000059;
+  margin: auto;
+  border-radius: 1em;
+  justify-items: center;
+  justify-content: center;
+
+}
+
 
 .projects {
-  top: 9rem;
-  font-size: 2rem;
-  position: absolute;
-  width: 20rem;
-  right: 4rem;
+  margin-top: 8em;
+  width: 80%;
 }
 #proj2 {
-  top: 24rem;
-  right: 30rem;
+  /* top: 24rem;
+  right: 30rem; */
 }
 #proj3 {
-  top: 24rem;
+  /* top: 24rem;
   opacity: 0;
-  right: -5rem !important;
+  right: -5rem !important; */
 }
 
 .section5 {
@@ -216,6 +232,12 @@ footer {
 }
 .social_media {
   cursor: pointer;
+}
+svg{
+  margin: 0 .3em .3em 0;
+  width: 1em;
+  fill: #fff;
+  height: 1em;
 }
 /* animation */
 @keyframes anim1 {
@@ -300,6 +322,10 @@ footer {
   }
 }
 @media only screen and (min-width: 1000px) and (max-width: 1200px) {
+  .projects{
+
+
+  }
   #social_media {
     left: 4rem;
     bottom: 1rem;
@@ -307,7 +333,10 @@ footer {
 }
 @media only screen and (min-width: 800px) and (max-width: 1000px) {
   .projects {
-    width: 12rem;
+    width: 80%;
+  }
+  .proj{
+    grid-template-columns: 20em 20em;
   }
   .projects > h3,
   h6 {
@@ -328,6 +357,9 @@ footer {
 @media only screen and (min-width: 700px) and (max-width: 800px) {
   .projects {
     width: 12rem;
+  }
+  .proj{
+    grid-template-columns: 20em 20em;
   }
   #section_2 {
     height: 35rem;
@@ -352,6 +384,9 @@ footer {
 @media only screen and (min-width: 600px) and (max-width: 700px) {
   .projects {
     width: 12rem;
+  }
+  .proj{
+    grid-template-columns: 20em 20em;
   }
   #section_2 {
     height: 35rem;
@@ -381,6 +416,9 @@ footer {
   .section4 #project_text {
     font-size: 1.1rem !important;
     left: 1rem;
+  }
+  .proj{
+    grid-template-columns: 15em 15em;
   }
   .projects {
     width: 8rem;
@@ -412,7 +450,11 @@ footer {
 
 @media only screen and (min-width: 300px) and (max-width: 500px) {
   .projects {
-    width: 6rem;
+    width: 90%;
+  }
+  .proj{
+    grid-template-columns: 20em;
+    grid-template-rows: 8em 8em 8em 8em;
   }
   #profile {
     font-size: 1rem !important;
@@ -426,7 +468,7 @@ footer {
   }
   .projects > h3,
   h6 {
-    font-size: 0.4rem !important;
+    font-size: .7rem !important;
   }
 
   #proj2 {
@@ -441,7 +483,6 @@ footer {
   }
   #social_media {
     grid-template-columns: 10rem 8rem;
-    left: 1rem;
     bottom: 2rem;
   }
 }

@@ -1,7 +1,6 @@
 import { myfunction } from "./mylibrary.js";
 let obj = new myfunction();
 let name = obj.select("#name");
-// import  *  from "anime.min.jsvar elements = document.querySelectorAll('.dom-node-demo .el');
 let nav = document.querySelector("#aaa");
 anime({
   targets: nav,
@@ -17,12 +16,9 @@ anime({
 anime({
   targets: name,
   translateY: 20,
-  // endDelay:3000,
   opacity: 1,
-  // easing:'easeInOutElastic'
   delay: 500,
   loop: false,
-  // duration:1000
 });
 export class animation {
   aboutme() {
@@ -137,14 +133,19 @@ export class animation {
     return anime({
       targets: obj.select("#project_text"),
       translateX: {
-        value: 30,
-
+        value: 40,
         duration: 200,
       },
       opacity: 1,
       duration: 100,
-      loop: false,
     });
+  }
+  proj(){
+    return anime({
+      targets:obj.select(".proj"),
+      opacity:1,
+      duration:1500
+    })
   }
   anim1() {
     return anime({
@@ -152,8 +153,9 @@ export class animation {
         obj.select("#proj1"),
         obj.select("#proj2"),
         obj.select("#proj3"),
+        obj.select("#proj4"),
       ],
-      translateX: {
+      translateY: {
         value: -150,
         duration: 300,
       },

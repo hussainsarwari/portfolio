@@ -60,6 +60,7 @@ class my_functions {
 
       if (scrollY > 2800) {
         ani.projectanimation();
+        ani.proj();
         ani.anim1();
       }
       if (scrollY > 3900) {
