@@ -12,6 +12,9 @@ class my_functions {
         document.querySelector("#bghtml").classList.add("bg-animation-html");
         document.querySelector("#bgcss").classList.add("bg-animation-css");
         document.querySelector("#bgjs").classList.add("bg-animation-js");
+        document.querySelector("#bgnext").classList.add("bg-animation-vue");
+        document.querySelector("#bgreact").classList.add("bg-animation-js");
+        document.querySelector("#bgwp").classList.add("bg-animation-css");
         document
           .querySelector("#bgbootstrap")
           .classList.add("bg-animation-bootstrap");
@@ -19,11 +22,13 @@ class my_functions {
       } else if (scrollY < 600) {
         document.querySelector("#bghtml").classList.remove("bg-animation-html");
         document.querySelector("#bgcss").classList.remove("bg-animation-css");
-
         document.querySelector("#bgjs").classList.remove("bg-animation-js");
         document
-          .querySelector("#bgbootstrap")
-          .classList.remove("bg-animation-bootstrap");
+          .querySelector("#bgbootstrap").classList.remove("bg-animation-bootstrap");
+          document.querySelector("#bgnext").classList.remove("bg-animation-vue");
+          document.querySelector("#bgreact").classList.remove("bg-animation-js");
+          document.querySelector("#bgwp").classList.remove("bg-animation-css");
+          
         document.querySelector("#bgvue").classList.remove("bg-animation-vue");
       }
       if (scrollY > 370) {

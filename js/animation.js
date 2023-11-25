@@ -20,6 +20,10 @@ anime({
   delay: 500,
   loop: false,
 });
+
+
+
+
 export class animation {
   aboutme() {
     return anime({
